@@ -1,0 +1,15 @@
+app:
+  name: cedricclyburn-demo-poi-gateway-app
+  namespace: cedricclyburn-demo
+  cluster: .apps.rosa-x4jc7.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-gh/cedricclyburn-demo-gateway
+  org: rhdh-gh
+  name: cedricclyburn-demo-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: cedricclyburn-demo/poi-gateway-app
+  tag: latest
